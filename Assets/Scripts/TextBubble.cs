@@ -10,28 +10,10 @@ public class TextBubble : MonoBehaviour
     [SerializeField] GameObject textBubbleButton;
     [SerializeField] GameObject closeButton;
 
-    public DragAndDrop dragAndDrop2;
-
-    //public GameObject gameManager;
-    //SpawnManager spawnManager;
-
-    private void OnEnable()
-    {
-        //dragAndDrop2.IsPlaced += ShowTextBubble();
-    }
-    private void OnDisable()
-    {
-        //dragAndDrop2.IsPlaced -= ShowTextBubble();
-    }
-
-
     void Start()
     {
-        //spawnManager = gameManager.GetComponent<SpawnManager>();
         m_Object.text = "Text Bubble";
     }
-
-    
 
     void ShowTextBubble()
     {
@@ -49,9 +31,5 @@ public class TextBubble : MonoBehaviour
     {
         m_Object.text = "Test if close icon stays in correct position";
     }
-
-    private void Update()
-    {
-        
-    }
+   
 }
