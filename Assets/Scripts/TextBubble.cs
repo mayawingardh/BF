@@ -16,6 +16,12 @@ public class TextBubble : MonoBehaviour
         closeButton.SetActive(false);
     }
 
+    private void OnMouseUp()
+    {
+        textBubbleButton.SetActive(false);
+        closeButton.SetActive(false);
+    }
+
     void ShowTextBubble()
     {
         textBubbleButton.SetActive(true);
@@ -32,5 +38,13 @@ public class TextBubble : MonoBehaviour
     {
         m_Object.text = "Insert text as appropriate";
     }
-   
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            textBubbleButton.SetActive(false);
+            closeButton.SetActive(false);
+        }
+    }
 }
