@@ -17,6 +17,8 @@ public class TextBubble : MonoBehaviour
     [SerializeField] DragAndDrop square4;
     [SerializeField] DragAndDrop square5;
 
+    int randomNumber;
+
     private void OnEnable()
     {
         square.IsPlaced += ShowTextBubble;
@@ -44,47 +46,55 @@ public class TextBubble : MonoBehaviour
 
     void ShowTextBubble()
     {
+        GetRandomNumberPositive();
         ShowButton();
-        m_Object.text = "Insert Text Bubble text as appropriate";
     }
 
     void ShowTextBubble1()
     {
+        GetRandomNumberNegative();
         ShowButton();
-        m_Object.text = "Insert Text Bubble text 1 as appropriate";
-
     }
 
     void ShowTextBubble2()
     {
+        GetRandomNumberNegative();
         ShowButton();
-        m_Object.text = "Insert Text Bubble text 2 as appropriate";
     }
 
     void ShowTextBubble3()
     {
+        GetRandomNumberNegative();
         ShowButton();
-        m_Object.text = "Insert Text Bubble text 3 as appropriate";
     }
 
     void ShowTextBubble4()
     {
+        GetRandomNumberPositive();
         ShowButton();
-        m_Object.text = "Insert Text Bubble text 4 as appropriate";
-
     }
 
     void ShowTextBubble5()
     {
+        GetRandomNumberPositive();
         ShowButton();
-        m_Object.text = "Insert Text Bubble text 5 as appropriate";
-
     }
 
     void ShowButton()
     {
         textBubbleButton.SetActive(true);
         closeButton.SetActive(true);
+    }
+
+    void GetRandomNumberNegative()
+    {
+        randomNumber = UnityEngine.Random.Range(-1, -14);
+    }
+
+    void GetRandomNumberPositive()
+    {
+        randomNumber = UnityEngine.Random.Range(1, 5);
+
     }
 
     public void CloseTextBubble()
@@ -99,6 +109,11 @@ public class TextBubble : MonoBehaviour
         {
             textBubbleButton.SetActive(false);
             closeButton.SetActive(false);
+        }
+
+        if(randomNumber == 1)
+        {
+            m_Object.text = "Insert Text Bubble text as appropriate";
         }
     }
 }
