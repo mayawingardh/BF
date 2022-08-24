@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShowTextBubbleScript : MonoBehaviour
 {
     [SerializeField] DragAndDrop square;
+    [SerializeField] DragAndDrop square1;
     [SerializeField] DragAndDrop square2;
     [SerializeField] DragAndDrop square3;
     [SerializeField] DragAndDrop square4;
@@ -16,6 +17,7 @@ public class ShowTextBubbleScript : MonoBehaviour
     private void OnEnable()
     {
         square.IsPlaced += ShowTextBubble;
+        square1.IsPlaced += ShowTextBubble;
         square2.IsPlaced += ShowTextBubble;
         square3.IsPlaced += ShowTextBubble;
         square4.IsPlaced += ShowTextBubble;
