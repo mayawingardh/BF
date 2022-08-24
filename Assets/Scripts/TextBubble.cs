@@ -18,6 +18,7 @@ public class TextBubble : MonoBehaviour
     [SerializeField] DragAndDrop square5;
 
     int randomNumber;
+    int previousRandomNumber;
 
     private void OnEnable()
     {
@@ -88,13 +89,12 @@ public class TextBubble : MonoBehaviour
 
     void GetRandomNumberNegative()
     {
-        randomNumber = UnityEngine.Random.Range(-1, -14);
+         randomNumber = UnityEngine.Random.Range(-1, -14);
     }
 
     void GetRandomNumberPositive()
     {
         randomNumber = UnityEngine.Random.Range(1, 5);
-
     }
 
     public void CloseTextBubble()
