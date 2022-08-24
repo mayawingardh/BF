@@ -12,7 +12,8 @@ public class TextBubble : MonoBehaviour
 
     void Start()
     {
-        m_Object.text = "Text Bubble";
+        textBubbleButton.SetActive(false);
+        closeButton.SetActive(false);
     }
 
     void ShowTextBubble()
@@ -29,7 +30,7 @@ public class TextBubble : MonoBehaviour
 
     public void ClickTextBubble()
     {
-        m_Object.text = "Test if close icon stays in correct position";
+        m_Object.text = "Insert text as appropriate";
     }
    
 }
