@@ -93,11 +93,6 @@ public class TextBubble : MonoBehaviour
         closeButton.SetActive(false);
     }
 
-    //public void ClickTextBubble()
-    //{
-    //    m_Object.text = "Insert text as appropriate";
-    //}
-
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
