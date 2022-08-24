@@ -557,7 +557,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -581,7 +581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286828346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -731,7 +731,6 @@ GameObject:
   m_Component:
   - component: {fileID: 330783140}
   - component: {fileID: 330783141}
-  - component: {fileID: 330783142}
   m_Layer: 0
   m_Name: TextBubble
   m_TagString: Untagged
@@ -768,26 +767,12 @@ MonoBehaviour:
   m_Object: {fileID: 1468346516}
   textBubbleButton: {fileID: 547740583}
   closeButton: {fileID: 991955273}
---- !u!114 &330783142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330783139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7236e3e5b0b00c845b6c367dd8e72e23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   square: {fileID: 1410766330}
   square1: {fileID: 967094005}
   square2: {fileID: 2087343280}
   square3: {fileID: 1404018579}
   square4: {fileID: 1990512532}
   square5: {fileID: 65279347}
-  textBubbleButton: {fileID: 547740583}
-  closeButton: {fileID: 991955273}
 --- !u!1 &417738859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,8 +1037,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -474.234, y: 0}
+  m_SizeDelta: {x: 0, y: 0.000061035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &574995290
 MonoBehaviour:
