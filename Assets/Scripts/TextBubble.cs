@@ -76,96 +76,96 @@ public class TextBubble : MonoBehaviour
 
         if(randomNumber == 1)
         {
-            m_Object.text = "Om alla bytte ut ett kilo nyproducerad textil mot ett kilo second hand det kommande �ret, skulle det inneb�ra att vi sparade minst 8 100 liter rent vatten per person.";
+            m_Object.text = "Bomull star for ca 40-50 % av textiltillverkning i varlden. Bomull odlas i torra omraden med vattenbrist.";
         }
 
         if (randomNumber == 2)
         {
-            m_Object.text = "Genom att handla second hand uts�tts du f�r mindre gifter. Kemikalierna, som tillsats vid tillverkningen av plagget eller prylen, har hunnit f�rsvinna eller tv�ttats bort.";
+            m_Object.text = "Ett par jeans kraver 12.000 liter vatten vid tillverkning.";
         }
 
         if (randomNumber == 3)
         {
-            m_Object.text = "Genom att handla i en Secondhand-butik med kopplingar till v�lg�renhet och socialt arbete bidrar din shopping till ett f�rb�ttrat samh�lle.";
+            m_Object.text = "Svensken koper ca 13 kg nya textilier varje ar. Endast 0,9kg secondhand.";
         }
 
         if (randomNumber == 4)
         {
-            m_Object.text = "Om du handlar vart tionde plagg second hand minskar du dina v�xthusgasutsl�pp med 30 kilo om �ret.";
+            m_Object.text = "Ett plaggs genomsnittliga livslangd ar endast 2,2 ar.";
         }
 
         if (randomNumber == 5)
         {
-            m_Object.text = "Vid garvning av l�der anv�nds ofta kemikalier med bland annat krom i. Genom att handla begagnade skor minskar du risken f�r att h�lsofarliga kemikalier kommer i kontakt med din hud.";
+            m_Object.text = "1 av 6 personer varlden over jobbar med nyproduktion av klader - 80% av dessa ar kvinnor.";
         }
 
         if (randomNumber == 6)
         {
-            m_Object.text = "Bomull st�r f�r ca 40-50 % av textiltillverkning i v�rlden. Bomull odlas i torra omr�den med vattenbrist. Grundvattenytan s�nks och lokalbefolkningens brunnar sinar. Floder och hela sj�ar torkar ut.";
+            m_Object.text = "Endast 5 av 250 stora varumarken som inspekterats i ”2020 Fashion Transparency Index” lever upp till kraven gallande minimilon för anstallda.";
         }
 
         if (randomNumber == 7)
         {
-            m_Object.text = "Ett par jeans kr�ver 12.000 liter vatten. Det �r 5 �r av dricksvatten till en person.";
+            m_Object.text = "100 miljarder kladesplagg produceras varje ar. Det ar 14 plagg per person.";
         }
 
         if (randomNumber == 8)
         {
-            m_Object.text = "Idag k�per svenskarna i genomsnitt ca 13 kg textilier per person varje �r (kl�der och t.ex. hemtextil). Ett plagg i Sverige lever i genomsnitt ca 2,2 �r.";
+            m_Object.text = "I snitt anvands ett kladesplagg bara 7 ganger.";
         }
 
         if (randomNumber == 9)
         {
-            m_Object.text = "Mellan 10 000 och 30 000 liter g�r det �t f�r att producera 1 kilo textil.";
+            m_Object.text = "3 av 5 plagg kopta inom ”fast fashion” hamnar pa tippen inom ett ar.";
         }
         if (randomNumber == 10)
         {
-            m_Object.text = "Svensken handlar mycket nytt i allm�nhet, n�rmare best�mt 12,5 kilo nyproducerade kl�der och hemtextilier per �r, att j�mf�ra med 0,9 kilo fr�n second hand.";
+            m_Object.text = "Genom att byta ut ett kilo ny textil mot secondhand sparar vi 8.100 liter vatten.";
         }
 
         if (randomNumber == 11)
         {
-            m_Object.text = "1 av 6 personer jobbar inom arbeten kopplat till nyproduktion av kl�der. 80% av dessa �r kvinnor.";
+            m_Object.text = "Secondhand = mindre gifter pa din hud. Mycket kemikalier vid tillverkning har hunnit tvattas bort.";
         }
 
         if (randomNumber == 12)
         {
-            m_Object.text = "Endast 5 av 250 stora varum�rken som inspekterats i �2020 Fashion Transparency Index� lever upp till kraven g�llande minimil�n f�r sina arbetare.";
+            m_Object.text = "Nar du handlar hos exempelvis Bjork&Frihet bidrar du till bade valgorande andamal och socialt arbete.";
         }
 
         if (randomNumber == 13)
         {
-            m_Object.text = "100 miljarder kl�desplagg produceras varje �r. Det �r 14 plagg per person.";
+            m_Object.text = "Genom att kopa vart tionde plagg secondhand minskar du dina vaxthusgasutslapp med 30kg per ar.";
         }
 
         if (randomNumber == 14)
         {
-            m_Object.text = "I snitt anv�nds ett kl�desplagg bara 7 g�nger. 3 av 5 plagg k�pta inom �fast fashion� hamnar p� tippen inom ett �r.";
+            m_Object.text = "90% av hela varldens skoproduktion sker i Asien. Ofta under daliga arbetsforhallanden.";
         }
 
         if (randomNumber == 15)
         {
-            m_Object.text = "90% av hela v�rldens skoproduktion sker i Asien och produktionen kan ofta f�rknippas med milj�problem samt d�liga arbetsf�rh�llanden.";
+            m_Object.text = "Produktionen av lader ar ofta kemikalieintensivt. For 1kg lader kravs 250 liter vatten och 2,5 kg kemikalier.";
         }
 
         if (randomNumber == 16)
         {
-            m_Object.text = "Produktionen av l�der �r kemikalieintensivt. F�r ett kilo anv�ndbart l�der g�r det �t upp till 250 liter vatten och 2,5 kg kemikalier.";
+            m_Object.text = "Skoindustrin beraknas sta for 1,5 % av varldens fororeningar.";
         }
 
         if (randomNumber == 17)
         {
-            m_Object.text = "Skoindustrin ber�knas st� f�r 1,5 % av v�rldens f�roreningar.";
+            m_Object.text = "15 miljarder skor produceras per ar.";
         }
 
         if (randomNumber == 18)
         {
-            m_Object.text = "15 miljarder skor produceras per �r.";
+            m_Object.text = "Skoproduktion bidrar till 1,3% av koldioxidutslappen i varlden. Nastan lika mycket som flygresor, som ligger pa 2-3%.";
         }
 
         if (randomNumber == 19)
         {
-            m_Object.text = "Skoproduktionen bidrar till 1,3% av koldioxidutsl�ppen i v�rlden. Det �r allts� n�stan lika mycket som utsl�ppen fr�n flygresor som ligger p� 2-3%.";
+            m_Object.text = "Vid laderproduktion anvands bl.a kromsyra. Genom att handla begagnade skor slipper du exponeras for mycket av dessa kemikalier.";
         }
 
     }
