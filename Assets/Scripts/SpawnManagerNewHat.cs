@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class SpawnManagerNewHat : MonoBehaviour
 {
-    //public DragAndDrop dragAndDrop;
-
-    //[SerializeField]
-    //private List<GameObject> newHat;
-
-    //[SerializeField]
-    //private Transform spawPos1;
-
 
     public void spawnNewGarment(List<GameObject> garment, Transform spawnPos )
     {

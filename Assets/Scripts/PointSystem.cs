@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PointSystem : MonoBehaviour
 {
@@ -23,12 +24,12 @@ public class PointSystem : MonoBehaviour
 
         if(TotalPoints >= 2)
         {
-            // load heaven scene
+            SceneManager.LoadScene(1);
         }
 
         if(TotalPoints <= 1)
         {
-            // load hell scene
+            SceneManager.LoadScene(2);
         }
     }
 }

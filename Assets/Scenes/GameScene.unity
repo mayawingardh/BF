@@ -1915,9 +1915,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1688147169}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: GoOutFromStore
+      - m_Target: {fileID: 5879227}
+        m_TargetAssemblyTypeName: PointSystem, Assembly-CSharp
+        m_MethodName: CalculateTotalPoints
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

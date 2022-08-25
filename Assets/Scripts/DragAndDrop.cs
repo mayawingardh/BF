@@ -33,6 +33,8 @@ public class DragAndDrop : MonoBehaviour
 
     PointSystem pointSystemGameObject;
 
+    List<GameObject> destroy = new List<GameObject>();
+
     private void Awake()
     {
         textBubble = FindObjectOfType<TextBubble>();
@@ -67,13 +69,11 @@ public class DragAndDrop : MonoBehaviour
     {
         dragging = true;
         //audioSource.PlayOneShot(pickUpSound);
-
         offset = GetMousePos() - (Vector2) transform.position;
     }
 
     private void OnMouseUp()
     {
-
         if (Vector2.Distance(transform.position, ett.transform.position) < 3 && gameObject.CompareTag("NewHat"))
         {
             transform.position = ett.transform.position;
@@ -83,6 +83,12 @@ public class DragAndDrop : MonoBehaviour
             pointSystemGameObject.HatPoints = -1;
             Debug.Log("HatPoints");
             Debug.Log(pointSystemGameObject.HatPoints);
+            if (destroy!=null)
+            {
+                destroy[0].SetActive(false);
+
+            }
+            destroy.Add(this.gameObject);
         }
 
         else if (Vector2.Distance(transform.position, ett.transform.position) < 3 && gameObject.CompareTag("oldhat"))

@@ -5,18 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    PointSystem pointSystem;
     public void GoOutFromStore()
     {
 
-        //if (poänge =< 10)
-        //{
-        //SceneManager.LoadScene(1);
-
-        //}
-
-        //if (poäng )
-        //{
-
-        //}
+   
     }
 }
