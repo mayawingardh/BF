@@ -5,8 +5,8 @@ using System;
 
 public class DAD2 : MonoBehaviour
 {
-    public event Action NewTopPlaced = delegate { };
-    public event Action OldTopPlaced = delegate { };
+    TextBubble textBubble;
+    SpawnManagerNewHat spawnManagerNewHat;
 
 
     private bool dragging, placed;
@@ -31,6 +31,8 @@ public class DAD2 : MonoBehaviour
     private void Start()
     {
         mainCamera = Camera.main;
+        textBubble = FindObjectOfType<TextBubble>();
+        spawnManagerNewHat = FindObjectOfType<SpawnManagerNewHat>();
     }
 
     private void Update()
@@ -65,14 +67,17 @@ public class DAD2 : MonoBehaviour
         {
             transform.position = tva.transform.position;
             placed = true;
-            //OldTopPlaced.Invoke();
+            //spawnManagerNewHat.spawnNewGarment();
+            //textBubble.
+
+
         }
 
         else if (Vector2.Distance(transform.position, tva.transform.position) < 3 && gameObject.CompareTag("NewTop"))
         {
             transform.position = tva.transform.position;
             placed = true;
-            //NewTopPlaced.Invoke();
+
         }
         else
         {

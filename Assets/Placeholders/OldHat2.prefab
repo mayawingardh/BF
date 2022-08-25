@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3665088860985654572
+--- !u!1 &8084722018489728321
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3665088860985654570}
-  - component: {fileID: 3665088860985654573}
-  - component: {fileID: 3665088860985654571}
-  - component: {fileID: 3665088860985654568}
+  - component: {fileID: 8084722018489728327}
+  - component: {fileID: 8084722018489728326}
+  - component: {fileID: 8084722018489728324}
+  - component: {fileID: 8084722018489728325}
   m_Layer: 0
-  m_Name: NewHat (4)
-  m_TagString: NewHat
+  m_Name: OldHat2
+  m_TagString: oldhat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3665088860985654570
+--- !u!4 &8084722018489728327
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3665088860985654572}
+  m_GameObject: {fileID: 8084722018489728321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,13 +33,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3665088860985654573
+--- !u!212 &8084722018489728326
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3665088860985654572}
+  m_GameObject: {fileID: 8084722018489728321}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.16981131, g: 0.14001423, b: 0.14001423, a: 1}
+  m_Color: {r: 0.4716981, g: 0.024029866, b: 0.024029866, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -84,13 +84,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3665088860985654571
+--- !u!114 &8084722018489728324
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3665088860985654572}
+  m_GameObject: {fileID: 8084722018489728321}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6500234fdc3bc044cb8fb520925b0ae5, type: 3}
@@ -100,13 +100,23 @@ MonoBehaviour:
   pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
   dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
   ett: {fileID: 9066291644241746089, guid: c8c71a1693d49884988ee764cb6b2ab5, type: 3}
---- !u!58 &3665088860985654568
+  newHat:
+  - {fileID: 2820721330413302942, guid: 25bf7660bc361114aa9682c10faafb3e, type: 3}
+  - {fileID: 2820721330413302942, guid: 25bf7660bc361114aa9682c10faafb3e, type: 3}
+  - {fileID: 2820721330413302942, guid: 25bf7660bc361114aa9682c10faafb3e, type: 3}
+  oldHat:
+  - {fileID: 3665088860985654572, guid: 8621038ea3cf2fe40a4e5e60eba9ff7e, type: 3}
+  - {fileID: 8084722018489728321}
+  - {fileID: 8193007829485004714, guid: 86cc8a9c1b7996640a6c99104ebfa69c, type: 3}
+  spawnNewHat: {fileID: 3312517589092564223, guid: e4a66ee53d0ac7346a6365cd2ade60fb, type: 3}
+  spawnOldHat: {fileID: 8353546035564949843, guid: 4502d473fb83fd243b96080aa1735831, type: 3}
+--- !u!58 &8084722018489728325
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3665088860985654572}
+  m_GameObject: {fileID: 8084722018489728321}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}

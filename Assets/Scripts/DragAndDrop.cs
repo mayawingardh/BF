@@ -5,8 +5,8 @@ using System;
 
 public class DragAndDrop : MonoBehaviour
 {
-    public event Action NewHatPlaced = delegate { };
-    public event Action OldHatPlaced = delegate { };
+    TextBubble textBubble;
+    SpawnManagerNewHat spawnManagerNewHat;
 
     private bool dragging, placed;
 
@@ -21,9 +21,20 @@ public class DragAndDrop : MonoBehaviour
 
     [SerializeField]
     private GameObject ett;
+
+    [SerializeField]
+    List<GameObject> newHat;
+    [SerializeField]
+    List<GameObject> oldHat;
+    [SerializeField]
+    Transform spawnNewHat;
+    [SerializeField]
+    Transform spawnOldHat;
    
     private void Awake()
     {
+        textBubble = FindObjectOfType<TextBubble>();
+        spawnManagerNewHat = FindObjectOfType<SpawnManagerNewHat>();
         OrgPos = transform.position;
     }
 
@@ -64,14 +75,17 @@ public class DragAndDrop : MonoBehaviour
         {
             transform.position = ett.transform.position;
             placed = true;
-            NewHatPlaced.Invoke();
+            spawnManagerNewHat.spawnNewGarment(newHat, spawnNewHat);
+            textBubble.ShowNewHatTextBubble();
         }
 
         else if (Vector2.Distance(transform.position, ett.transform.position) < 3 && gameObject.CompareTag("oldhat"))
         {
             transform.position = ett.transform.position;
             placed = true;
-           // OldHatPlaced.Invoke();
+            spawnManagerNewHat.spawnNewGarment(oldHat, spawnOldHat);
+            textBubble.ShowOldHatTextBubble1();
+
         }
         else
         {
@@ -80,8 +94,6 @@ public class DragAndDrop : MonoBehaviour
             //audioSource.PlayOneShot(dropSound);
         }  
     }
-
-    //todo. OLIKA KLADER OLIKA POANG, KAN BARA SATTAS PÅ VISSA STALLEN
 
     Vector2 GetMousePos ()
     {

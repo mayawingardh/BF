@@ -4,28 +4,19 @@ using UnityEngine;
 
 public class SpawnManagerNewHat : MonoBehaviour
 {
-    public DragAndDrop dragAndDrop;
+    //public DragAndDrop dragAndDrop;
 
-    [SerializeField]
-    private List<GameObject> newHat;
+    //[SerializeField]
+    //private List<GameObject> newHat;
 
-    [SerializeField]
-    private Transform spawPos1;
+    //[SerializeField]
+    //private Transform spawPos1;
 
 
-    private void OnEnable()
+    public void spawnNewGarment(List<GameObject> garment, Transform spawnPos )
     {
-        dragAndDrop.NewHatPlaced += spawnNewGarment;
-    }
-    private void OnDisable()
-    {
-        dragAndDrop.NewHatPlaced -= spawnNewGarment;
-    }
-
-    void spawnNewGarment()
-    {
-        GameObject randomGarment = newHat[Random.Range(0, newHat.Count)];
-        Vector3 spawn = new Vector3(spawPos1.transform.position.x, spawPos1.transform.position.y);
+        GameObject randomGarment = garment[Random.Range(0, garment.Count)];
+        Vector3 spawn = new Vector3(spawnPos.transform.position.x, spawnPos.transform.position.y);
         GameObject refGarment = Instantiate(randomGarment, spawn, Quaternion.identity);
     }
 }
