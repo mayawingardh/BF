@@ -31,6 +31,9 @@ public class DAD3 : MonoBehaviour
     [SerializeField]
     Transform spawnOldBottom;
 
+    PointSystem pointSystemGameObject;
+
+
 
     private void Awake()
     {
@@ -42,6 +45,7 @@ public class DAD3 : MonoBehaviour
     private void Start()
     {
         mainCamera = Camera.main;
+        pointSystemGameObject = FindObjectOfType<PointSystem>();
     }
 
     private void Update()
@@ -78,7 +82,10 @@ public class DAD3 : MonoBehaviour
             placed = true;
             spawnManagerNewHat.spawnNewGarment(newBottom, spawnNewBottom);
             textBubble.ShowNewBottomTextBubble();
-            
+            pointSystemGameObject.BottomPoints = -1;
+            Debug.Log("BottomPoints");
+            Debug.Log(pointSystemGameObject.BottomPoints);
+
         }
 
         else if (Vector2.Distance(transform.position, tre.transform.position) < 3 && gameObject.CompareTag("OldBottom"))
@@ -87,7 +94,9 @@ public class DAD3 : MonoBehaviour
             placed = true;
             spawnManagerNewHat.spawnNewGarment(oldBottom, spawnOldBottom);
             textBubble.ShowOldBottomTextBubble();
-
+            pointSystemGameObject.BottomPoints = 1;
+            Debug.Log("BottomPoints");
+            Debug.Log(pointSystemGameObject.BottomPoints);
         }
 
         else
