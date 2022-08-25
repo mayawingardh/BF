@@ -76,7 +76,7 @@ public class DAD4 : MonoBehaviour
     private void OnMouseUp()
     {
 
-        if (Vector2.Distance(transform.position, fyra.transform.position) < 3 && gameObject.CompareTag("NewBottom"))
+        if (Vector2.Distance(transform.position, fyra.transform.position) < 3 && gameObject.CompareTag("NewPants"))
         {
             transform.position = fyra.transform.position;
             placed = true;
@@ -88,7 +88,7 @@ public class DAD4 : MonoBehaviour
 
         }
 
-        else if (Vector2.Distance(transform.position, fyra.transform.position) < 3 && gameObject.CompareTag("OldBottom"))
+        else if (Vector2.Distance(transform.position, fyra.transform.position) < 3 && gameObject.CompareTag("OldPants"))
         {
             transform.position = fyra.transform.position;
             placed = true;
