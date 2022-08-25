@@ -109,7 +109,6 @@ public class DragAndDrop : MonoBehaviour
             //audioSource.PlayOneShot(dropSound);
         }  
     }
-
     Vector2 GetMousePos ()
     {
         return mainCamera.ScreenToWorldPoint(Input.mousePosition); 

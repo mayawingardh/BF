@@ -10,6 +10,8 @@ TagManager:
   - NewTop
   - OldBottom
   - NewBottom
+  - NewPants
+  - OldPants
   layers:
   - Default
   - TransparentFX
