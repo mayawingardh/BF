@@ -18,37 +18,37 @@ public class TextBubble : MonoBehaviour
         closeButton.SetActive(false);
     }
 
-    public void ShowTextBubble()
+    public void ShowNewHatTextBubble()
     {
         GetRandomNumberPositive();
         ShowButton();
     }
 
-    public void ShowTextBubble1()
+    public void ShowOldHatTextBubble1()
     {
         GetRandomNumberNegative();
         ShowButton();
     }
 
-    public void ShowTextBubble2()
+    public void ShowNewTopTextBubble()
     {
         GetRandomNumberNegative();
         ShowButton();
     }
 
-    public void ShowTextBubble3()
+    public void ShowOldTopTextBubble()
     {
         GetRandomNumberNegative();
         ShowButton();
     }
 
-    public void ShowTextBubble4()
+    public void ShowNewBottomTextBubble()
     {
         GetRandomNumberPositive();
         ShowButton();
     }
 
-    public void ShowTextBubble5()
+    public void ShowOldBottomTextBubble()
     {
         GetRandomNumberPositive();
         ShowButton();
