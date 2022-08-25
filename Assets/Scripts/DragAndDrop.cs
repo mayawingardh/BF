@@ -81,8 +81,6 @@ public class DragAndDrop : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(newHat, spawnNewHat);
             textBubble.ShowNewHatTextBubble();
             pointSystemGameObject.HatPoints = -1;
-            Debug.Log("HatPoints");
-            Debug.Log(pointSystemGameObject.HatPoints);
 
             if (destroy!=null)
             {
@@ -99,8 +97,6 @@ public class DragAndDrop : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(oldHat, spawnOldHat);
             textBubble.ShowOldHatTextBubble1();
             pointSystemGameObject.HatPoints = 1;
-            Debug.Log("HatPoints");
-            Debug.Log(pointSystemGameObject.HatPoints);
         }
         else
         {

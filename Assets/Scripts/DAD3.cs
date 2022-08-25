@@ -83,9 +83,6 @@ public class DAD3 : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(newSocks, spawnNewSocks);
             textBubble.ShowNewBottomTextBubble();
             pointSystemGameObject.BottomPoints = -1;
-            Debug.Log("BottomPoints");
-            Debug.Log(pointSystemGameObject.BottomPoints);
-
         }
 
         else if (Vector2.Distance(transform.position, tre.transform.position) < 3 && gameObject.CompareTag("OldBottom"))
@@ -95,8 +92,6 @@ public class DAD3 : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(oldSocks, spawnOldSocks);
             textBubble.ShowOldBottomTextBubble();
             pointSystemGameObject.BottomPoints = 1;
-            Debug.Log("BottomPoints");
-            Debug.Log(pointSystemGameObject.BottomPoints);
         }
 
         else

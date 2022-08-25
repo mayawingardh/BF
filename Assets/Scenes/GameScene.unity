@@ -317,7 +317,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03785944, y: 0.037858963}
+  m_Offset: {x: -0.05573702, y: 1.3248098}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.53, y: 0.28}
@@ -328,7 +328,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.6187735, y: 2.4386349}
+  m_Size: {x: 5.4315805, y: 6.322885}
   m_EdgeRadius: 0
 --- !u!212 &66440016
 SpriteRenderer:
@@ -684,8 +684,8 @@ BoxCollider2D:
   m_Offset: {x: 0.018929958, y: 0.24608183}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.54, y: 0.32}
-    oldSize: {x: 7.56, y: 8.98}
+    pivot: {x: 0.55, y: 0.07}
+    oldSize: {x: 8.05, y: 6.22}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -734,7 +734,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 9668939faf9d63340b08d96b98266335, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aace077b98ca3e0468b77202dd72a431, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1742,8 +1742,8 @@ MonoBehaviour:
   tre: {fileID: 1911244206}
   newSocks: []
   oldSocks: []
-  spawnNewSocks: {fileID: 0}
-  spawnOldSocks: {fileID: 0}
+  spawnNewSocks: {fileID: 1073215604}
+  spawnOldSocks: {fileID: 1935278721}
 --- !u!61 &1201951514
 BoxCollider2D:
   m_ObjectHideFlags: 0
