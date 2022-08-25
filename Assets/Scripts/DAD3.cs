@@ -5,9 +5,8 @@ using System;
 
 public class DAD3 : MonoBehaviour
 {
-    public event Action NewBottomPlaced = delegate { };
-    public event Action OldBottomPlaced = delegate { };
-
+    TextBubble textBubble;
+    SpawnManagerNewHat spawnManagerNewHat;
 
     private bool dragging, placed;
 
@@ -23,10 +22,21 @@ public class DAD3 : MonoBehaviour
     [SerializeField]
     private GameObject tre;
 
+    [SerializeField]
+    List<GameObject> newBottom;
+    [SerializeField]
+    List<GameObject> oldBottom;
+    [SerializeField]
+    Transform spawnNewBottom;
+    [SerializeField]
+    Transform spawnOldBottom;
+
 
     private void Awake()
     {
         OrgPos = transform.position;
+        textBubble = FindObjectOfType<TextBubble>();
+        spawnManagerNewHat = FindObjectOfType<SpawnManagerNewHat>();
     }
 
     private void Start()
@@ -62,18 +72,22 @@ public class DAD3 : MonoBehaviour
     private void OnMouseUp()
     {
 
-        if (Vector2.Distance(transform.position, tre.transform.position) < 3 && gameObject.CompareTag("OldBottom"))
+        if (Vector2.Distance(transform.position, tre.transform.position) < 3 && gameObject.CompareTag("NewBottom"))
         {
             transform.position = tre.transform.position;
             placed = true;
-            //OldBottomPlaced.Invoke();
+            spawnManagerNewHat.spawnNewGarment(newBottom, spawnNewBottom);
+            textBubble.ShowNewBottomTextBubble();
+            
         }
 
-        else if (Vector2.Distance(transform.position, tre.transform.position) < 3 && gameObject.CompareTag("NewBottom"))
+        else if (Vector2.Distance(transform.position, tre.transform.position) < 3 && gameObject.CompareTag("OldBottom"))
         {
             transform.position = tre.transform.position;
             placed = true;
-            //NewBottomPlaced.Invoke();
+            spawnManagerNewHat.spawnNewGarment(oldBottom, spawnOldBottom);
+            textBubble.ShowOldBottomTextBubble();
+
         }
 
         else
