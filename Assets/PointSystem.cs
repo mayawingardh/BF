@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class PointSystem : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int points;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        points = 0;
     }
 }
