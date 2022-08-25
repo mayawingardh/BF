@@ -23,13 +23,13 @@ public class DAD4 : MonoBehaviour
     private GameObject fyra;
 
     [SerializeField]
-    List<GameObject> newBottom;
+    List<GameObject> newPants;
     [SerializeField]
-    List<GameObject> oldBottom;
+    List<GameObject> oldPants;
     [SerializeField]
-    Transform spawnNewBottom;
+    Transform spawnNewPants;
     [SerializeField]
-    Transform spawnOldBottom;
+    Transform spawnOldPants;
 
     PointSystem pointSystemGameObject;
 
@@ -80,23 +80,18 @@ public class DAD4 : MonoBehaviour
         {
             transform.position = fyra.transform.position;
             placed = true;
-            spawnManagerNewHat.spawnNewGarment(newBottom, spawnNewBottom);
+            spawnManagerNewHat.spawnNewGarment(newPants, spawnNewPants);
             textBubble.ShowNewBottomTextBubble();
-            pointSystemGameObject.BottomPoints = -1;
-            Debug.Log("BottomPoints");
-            Debug.Log(pointSystemGameObject.BottomPoints);
-
+            pointSystemGameObject.MiddlePoints = -1;
         }
 
         else if (Vector2.Distance(transform.position, fyra.transform.position) < 3 && gameObject.CompareTag("OldPants"))
         {
             transform.position = fyra.transform.position;
             placed = true;
-            spawnManagerNewHat.spawnNewGarment(oldBottom, spawnOldBottom);
+            spawnManagerNewHat.spawnNewGarment(oldPants, spawnOldPants);
             textBubble.ShowOldBottomTextBubble();
-            pointSystemGameObject.BottomPoints = 1;
-            Debug.Log("BottomPoints");
-            Debug.Log(pointSystemGameObject.BottomPoints);
+            pointSystemGameObject.MiddlePoints = 1;
         }
 
         else

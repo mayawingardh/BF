@@ -9,12 +9,14 @@ public class PointSystem : MonoBehaviour
 
     public int HatPoints;
     public int TopPoints;
+    public int MiddlePoints;
     public int BottomPoints;
 
     void Start()
     {
         HatPoints = 0;
         TopPoints = 0;
+        MiddlePoints = 0;
         BottomPoints = 0;
     }
 
