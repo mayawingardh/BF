@@ -31,7 +31,7 @@ public class DragAndDrop : MonoBehaviour
     [SerializeField]
     Transform spawnOldHat;
 
-    int points;
+    public int points;
    
     private void Awake()
     {
@@ -80,7 +80,7 @@ public class DragAndDrop : MonoBehaviour
             placed = true;
             spawnManagerNewHat.spawnNewGarment(newHat, spawnNewHat);
             textBubble.ShowNewHatTextBubble();
-            points -= 1;
+            points = points + 1;
             Debug.Log(points);
         }
 
@@ -90,7 +90,7 @@ public class DragAndDrop : MonoBehaviour
             placed = true;
             spawnManagerNewHat.spawnNewGarment(oldHat, spawnOldHat);
             textBubble.ShowOldHatTextBubble1();
-            points += 1;
+            points = points - 1;
             Debug.Log(points);
 
         }
