@@ -20,37 +20,37 @@ public class TextBubble : MonoBehaviour
 
     public void ShowNewHatTextBubble()
     {
-        GetRandomNumberNegative();
+        GetRandomNumber();
         ShowButton();
     }
 
     public void ShowOldHatTextBubble1()
     {
-        GetRandomNumberPositive();
+        GetRandomNumber();
         ShowButton();
     }
 
     public void ShowNewTopTextBubble()
     {
-        GetRandomNumberNegative();
+        GetRandomNumber();
         ShowButton();
     }
 
     public void ShowOldTopTextBubble()
     {
-        GetRandomNumberPositive();
+        GetRandomNumber();
         ShowButton();
     }
 
     public void ShowNewBottomTextBubble()
     {
-        GetRandomNumberNegative();
+        GetRandomNumber();
         ShowButton();
     }
 
     public void ShowOldBottomTextBubble()
     {
-        GetRandomNumberPositive();
+        GetRandomNumber();
         ShowButton();
     }
 
@@ -60,14 +60,9 @@ public class TextBubble : MonoBehaviour
         closeButton.SetActive(true);
     }
 
-    void GetRandomNumberNegative()
+    void GetRandomNumber()
     {
-         randomNumber = UnityEngine.Random.Range(-1, -14);
-    }
-
-    void GetRandomNumberPositive()
-    {
-        randomNumber = UnityEngine.Random.Range(1, 5);
+        randomNumber = UnityEngine.Random.Range(1, 19);
     }
 
     public void CloseTextBubble()
@@ -109,71 +104,71 @@ public class TextBubble : MonoBehaviour
             m_Object.text = "Vid garvning av l�der anv�nds ofta kemikalier med bland annat krom i. Genom att handla begagnade skor minskar du risken f�r att h�lsofarliga kemikalier kommer i kontakt med din hud.";
         }
 
-        if (randomNumber == -1)
+        if (randomNumber == 6)
         {
             m_Object.text = "Bomull st�r f�r ca 40-50 % av textiltillverkning i v�rlden. Bomull odlas i torra omr�den med vattenbrist. Grundvattenytan s�nks och lokalbefolkningens brunnar sinar. Floder och hela sj�ar torkar ut.";
         }
 
-        if (randomNumber == -2)
+        if (randomNumber == 7)
         {
             m_Object.text = "Ett par jeans kr�ver 12.000 liter vatten. Det �r 5 �r av dricksvatten till en person.";
         }
 
-        if (randomNumber == -3)
+        if (randomNumber == 8)
         {
             m_Object.text = "Idag k�per svenskarna i genomsnitt ca 13 kg textilier per person varje �r (kl�der och t.ex. hemtextil). Ett plagg i Sverige lever i genomsnitt ca 2,2 �r.";
         }
 
-        if (randomNumber == -4)
+        if (randomNumber == 9)
         {
             m_Object.text = "Mellan 10 000 och 30 000 liter g�r det �t f�r att producera 1 kilo textil.";
         }
-        if (randomNumber == -5)
+        if (randomNumber == 10)
         {
             m_Object.text = "Svensken handlar mycket nytt i allm�nhet, n�rmare best�mt 12,5 kilo nyproducerade kl�der och hemtextilier per �r, att j�mf�ra med 0,9 kilo fr�n second hand.";
         }
 
-        if (randomNumber == -6)
+        if (randomNumber == 11)
         {
             m_Object.text = "1 av 6 personer jobbar inom arbeten kopplat till nyproduktion av kl�der. 80% av dessa �r kvinnor.";
         }
 
-        if (randomNumber == -7)
+        if (randomNumber == 12)
         {
             m_Object.text = "Endast 5 av 250 stora varum�rken som inspekterats i �2020 Fashion Transparency Index� lever upp till kraven g�llande minimil�n f�r sina arbetare.";
         }
 
-        if (randomNumber == -8)
+        if (randomNumber == 13)
         {
             m_Object.text = "100 miljarder kl�desplagg produceras varje �r. Det �r 14 plagg per person.";
         }
 
-        if (randomNumber == -9)
+        if (randomNumber == 14)
         {
             m_Object.text = "I snitt anv�nds ett kl�desplagg bara 7 g�nger. 3 av 5 plagg k�pta inom �fast fashion� hamnar p� tippen inom ett �r.";
         }
 
-        if (randomNumber == -10)
+        if (randomNumber == 15)
         {
             m_Object.text = "90% av hela v�rldens skoproduktion sker i Asien och produktionen kan ofta f�rknippas med milj�problem samt d�liga arbetsf�rh�llanden.";
         }
 
-        if (randomNumber == -11)
+        if (randomNumber == 16)
         {
             m_Object.text = "Produktionen av l�der �r kemikalieintensivt. F�r ett kilo anv�ndbart l�der g�r det �t upp till 250 liter vatten och 2,5 kg kemikalier.";
         }
 
-        if (randomNumber == -12)
+        if (randomNumber == 17)
         {
             m_Object.text = "Skoindustrin ber�knas st� f�r 1,5 % av v�rldens f�roreningar.";
         }
 
-        if (randomNumber == -13)
+        if (randomNumber == 18)
         {
             m_Object.text = "15 miljarder skor produceras per �r.";
         }
 
-        if (randomNumber == -14)
+        if (randomNumber == 19)
         {
             m_Object.text = "Skoproduktionen bidrar till 1,3% av koldioxidutsl�ppen i v�rlden. Det �r allts� n�stan lika mycket som utsl�ppen fr�n flygresor som ligger p� 2-3%.";
         }
