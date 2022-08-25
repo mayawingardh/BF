@@ -10,33 +10,7 @@ public class TextBubble : MonoBehaviour
     [SerializeField] GameObject textBubbleButton;
     [SerializeField] GameObject closeButton;
 
-    [SerializeField] DragAndDrop square;
-    [SerializeField] DragAndDrop square1;
-    [SerializeField] DragAndDrop square2;
-    [SerializeField] DragAndDrop square3;
-    [SerializeField] DragAndDrop square4;
-    [SerializeField] DragAndDrop square5;
-
     int randomNumber;
-
-    //private void OnEnable()
-    //{
-    //    square.IsPlaced += ShowTextBubble;
-    //    square1.IsPlaced += ShowTextBubble1;
-    //    square2.IsPlaced += ShowTextBubble2;
-    //    square3.IsPlaced += ShowTextBubble3;
-    //    square4.IsPlaced += ShowTextBubble4;
-    //    square5.IsPlaced += ShowTextBubble5;
-    //}
-    //private void OnDisable()
-    //{
-    //    square.IsPlaced -= ShowTextBubble;
-    //    square1.IsPlaced -= ShowTextBubble;
-    //    square2.IsPlaced -= ShowTextBubble;
-    //    square3.IsPlaced -= ShowTextBubble;
-    //    square4.IsPlaced -= ShowTextBubble;
-    //    square5.IsPlaced -= ShowTextBubble;
-    // }
 
     void Start()
     {
@@ -44,43 +18,43 @@ public class TextBubble : MonoBehaviour
         closeButton.SetActive(false);
     }
 
-    void ShowTextBubble()
+    public void ShowTextBubble()
     {
         GetRandomNumberPositive();
         ShowButton();
     }
 
-    void ShowTextBubble1()
+    public void ShowTextBubble1()
     {
         GetRandomNumberNegative();
         ShowButton();
     }
 
-    void ShowTextBubble2()
+    public void ShowTextBubble2()
     {
         GetRandomNumberNegative();
         ShowButton();
     }
 
-    void ShowTextBubble3()
+    public void ShowTextBubble3()
     {
         GetRandomNumberNegative();
         ShowButton();
     }
 
-    void ShowTextBubble4()
+    public void ShowTextBubble4()
     {
         GetRandomNumberPositive();
         ShowButton();
     }
 
-    void ShowTextBubble5()
+    public void ShowTextBubble5()
     {
         GetRandomNumberPositive();
         ShowButton();
     }
 
-    void ShowButton()
+    public void ShowButton()
     {
         textBubbleButton.SetActive(true);
         closeButton.SetActive(true);
