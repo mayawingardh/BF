@@ -22,12 +22,12 @@ public class PointSystem : MonoBehaviour
     {
         TotalPoints = HatPoints + TopPoints + BottomPoints;
 
-        if(TotalPoints >= 2)
+        if(TotalPoints >= 1)
         {
             SceneManager.LoadScene("HeavenScene");
         }
 
-        if(TotalPoints <= 1)
+        if(TotalPoints <= 0)
         {
             SceneManager.LoadScene("HellScene");
         }
