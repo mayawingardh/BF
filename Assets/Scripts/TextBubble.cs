@@ -8,14 +8,12 @@ public class TextBubble : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI m_Object;
     [SerializeField] GameObject textBubbleButton;
-    [SerializeField] GameObject closeButton;
 
     int randomNumber;
 
     void Start()
     {
         textBubbleButton.SetActive(false);
-        closeButton.SetActive(false);
     }
 
     public void ShowNewHatTextBubble()
@@ -57,7 +55,6 @@ public class TextBubble : MonoBehaviour
     public void ShowButton()
     {
         textBubbleButton.SetActive(true);
-        closeButton.SetActive(true);
     }
 
     void GetRandomNumber()
@@ -68,7 +65,6 @@ public class TextBubble : MonoBehaviour
     public void CloseTextBubble()
     {
         textBubbleButton.SetActive(false);
-        closeButton.SetActive(false);
     }
 
     private void Update()
@@ -76,7 +72,6 @@ public class TextBubble : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             textBubbleButton.SetActive(false);
-            closeButton.SetActive(false);
         }
 
         if(randomNumber == 1)
