@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 66440014}
   m_Layer: 0
   m_Name: bottom2
-  m_TagString: OldBottom
+  m_TagString: NewBottom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -300,10 +300,16 @@ MonoBehaviour:
   pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
   dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
   tre: {fileID: 1911244206}
-  newSocks: []
-  oldSocks: []
-  spawnNewSocks: {fileID: 0}
-  spawnOldSocks: {fileID: 0}
+  newSocks:
+  - {fileID: 8735173020033827225, guid: a682e90ea243f134bb597c8ab904e494, type: 3}
+  - {fileID: 7076483719515370855, guid: 7ea846c3dec4eda4daa072b9c47ebd2e, type: 3}
+  - {fileID: 349434326509081286, guid: 642dbfb526d1a4047a22d59b060459a6, type: 3}
+  oldSocks:
+  - {fileID: 8859042580181101786, guid: 0b6158f25a024ba4698907dba534d0ea, type: 3}
+  - {fileID: 6541003062956654133, guid: 3edafe1e2c1eaf84d80e5362d717d317, type: 3}
+  - {fileID: 7542214742923806730, guid: 6aca20c6f78f56f4f9ec9a893bbccc10, type: 3}
+  spawnNewSocks: {fileID: 1073215604}
+  spawnOldSocks: {fileID: 1935278721}
 --- !u!61 &66440015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -395,7 +401,7 @@ GameObject:
   - component: {fileID: 173068837}
   m_Layer: 0
   m_Name: hat2
-  m_TagString: oldhat
+  m_TagString: NewHat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -623,7 +629,7 @@ GameObject:
   - component: {fileID: 562631677}
   m_Layer: 0
   m_Name: top2
-  m_TagString: oldTop
+  m_TagString: NewTop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1375,7 +1381,7 @@ GameObject:
   - component: {fileID: 935609583}
   m_Layer: 0
   m_Name: hat1
-  m_TagString: NewHat
+  m_TagString: oldhat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1414,8 +1420,8 @@ MonoBehaviour:
   - {fileID: 2820721330413302942, guid: 25bf7660bc361114aa9682c10faafb3e, type: 3}
   - {fileID: 2615351242382752823, guid: 21da477370b8aaf499f454027090d488, type: 3}
   oldHat:
-  - {fileID: 3483363992446871232, guid: ebac7c47d989ce446b1076954ff2e52c, type: 3}
   - {fileID: 3665088860985654572, guid: 8621038ea3cf2fe40a4e5e60eba9ff7e, type: 3}
+  - {fileID: 8084722018489728321, guid: 834a5344a7e42984cbe76e4246f5a1d3, type: 3}
   spawnNewHat: {fileID: 1286830135}
   spawnOldHat: {fileID: 235990192}
 --- !u!61 &935609584
@@ -1705,7 +1711,7 @@ GameObject:
   - component: {fileID: 1201951513}
   m_Layer: 0
   m_Name: bottom1
-  m_TagString: NewBottom
+  m_TagString: OldBottom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1740,8 +1746,14 @@ MonoBehaviour:
   pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
   dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
   tre: {fileID: 1911244206}
-  newSocks: []
-  oldSocks: []
+  newSocks:
+  - {fileID: 8735173020033827225, guid: a682e90ea243f134bb597c8ab904e494, type: 3}
+  - {fileID: 7076483719515370855, guid: 7ea846c3dec4eda4daa072b9c47ebd2e, type: 3}
+  - {fileID: 349434326509081286, guid: 642dbfb526d1a4047a22d59b060459a6, type: 3}
+  oldSocks:
+  - {fileID: 8859042580181101786, guid: 0b6158f25a024ba4698907dba534d0ea, type: 3}
+  - {fileID: 6541003062956654133, guid: 3edafe1e2c1eaf84d80e5362d717d317, type: 3}
+  - {fileID: 7542214742923806730, guid: 6aca20c6f78f56f4f9ec9a893bbccc10, type: 3}
   spawnNewSocks: {fileID: 1073215604}
   spawnOldSocks: {fileID: 1935278721}
 --- !u!61 &1201951514
@@ -2454,7 +2466,7 @@ GameObject:
   - component: {fileID: 1909838357}
   m_Layer: 0
   m_Name: top1
-  m_TagString: NewTop
+  m_TagString: oldTop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

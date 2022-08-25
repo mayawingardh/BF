@@ -24,12 +24,12 @@ public class PointSystem : MonoBehaviour
 
         if(TotalPoints >= 2)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("HeavenScene");
         }
 
         if(TotalPoints <= 1)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("HellScene");
         }
     }
 }
