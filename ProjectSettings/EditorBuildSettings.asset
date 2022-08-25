@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 367c69cd83543ed4dbb0c631b963f8da
+  - enabled: 1
     path: Assets/Scenes/Maya.unity
     guid: 90a5f45ad49967349ae35e23f2e270a7
-  - enabled: 1
-    path: Assets/Scenes/James.unity
-    guid: d505bcadbea005f4c9c1a89b10c3faf2
   m_configObjects: {}
