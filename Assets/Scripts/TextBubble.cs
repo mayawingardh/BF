@@ -101,7 +101,7 @@ public class TextBubble : MonoBehaviour
 
         if (randomNumber == 6)
         {
-            m_Object.text = "Endast 5 av 250 stora varumarken som inspekterats i ”2020 Fashion Transparency Index” lever upp till kraven gallande minimilon för anstallda.";
+            m_Object.text = "Endast 5 av 250 stora varumarken som inspekterats i ”2020 Fashion Transparency Index” lever upp till kraven gallande minimilon for anstallda.";
         }
 
         if (randomNumber == 7)
