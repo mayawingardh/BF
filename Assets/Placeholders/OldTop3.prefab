@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 631758330955200988}
   m_Layer: 0
   m_Name: OldTop3
-  m_TagString: Untagged
+  m_TagString: oldTop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
