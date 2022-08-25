@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class PointSystem : MonoBehaviour
 {
-    public int points;
+    public int HatPoints;
+    public int TopPoints;
+    public int BottomPoints;
 
     void Start()
     {
-        points = 0;
+        HatPoints = 0;
+        TopPoints = 0;
+        BottomPoints = 0;
     }
 }

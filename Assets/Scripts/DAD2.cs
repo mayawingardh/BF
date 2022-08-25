@@ -32,6 +32,8 @@ public class DAD2 : MonoBehaviour
     [SerializeField]
     Transform spawnOldTop;
 
+    PointSystem pointSystemGameObject;
+
     private void Awake()
     {
         OrgPos = transform.position;
@@ -42,6 +44,7 @@ public class DAD2 : MonoBehaviour
     private void Start()
     {
         mainCamera = Camera.main;
+        pointSystemGameObject = FindObjectOfType<PointSystem>();
     }
 
     private void Update()
@@ -78,8 +81,9 @@ public class DAD2 : MonoBehaviour
             placed = true;
             spawnManagerNewHat.spawnNewGarment(oldTop, spawnOldTop);
             textBubble.ShowOldTopTextBubble();
-
-
+            pointSystemGameObject.TopPoints = 1;
+            Debug.Log("TopPoints");
+            Debug.Log(pointSystemGameObject.TopPoints);
         }
 
         else if (Vector2.Distance(transform.position, tva.transform.position) < 3 && gameObject.CompareTag("NewTop"))
@@ -88,6 +92,9 @@ public class DAD2 : MonoBehaviour
             placed = true;
             spawnManagerNewHat.spawnNewGarment(newTop, spawnNewTop);
             textBubble.ShowNewTopTextBubble();
+            pointSystemGameObject.TopPoints = -1;
+            Debug.Log("TopPoints");
+            Debug.Log(pointSystemGameObject.TopPoints);
 
         }
         else

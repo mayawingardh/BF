@@ -80,8 +80,9 @@ public class DragAndDrop : MonoBehaviour
             placed = true;
             spawnManagerNewHat.spawnNewGarment(newHat, spawnNewHat);
             textBubble.ShowNewHatTextBubble();
-            pointSystemGameObject.points += 1;
-            Debug.Log(pointSystemGameObject.points);
+            pointSystemGameObject.HatPoints = -1;
+            Debug.Log("HatPoints");
+            Debug.Log(pointSystemGameObject.HatPoints);
         }
 
         else if (Vector2.Distance(transform.position, ett.transform.position) < 3 && gameObject.CompareTag("oldhat"))
@@ -90,9 +91,9 @@ public class DragAndDrop : MonoBehaviour
             placed = true;
             spawnManagerNewHat.spawnNewGarment(oldHat, spawnOldHat);
             textBubble.ShowOldHatTextBubble1();
-            pointSystemGameObject.points -= 1;
-            Debug.Log(pointSystemGameObject.points);
-
+            pointSystemGameObject.HatPoints = 1;
+            Debug.Log("HatPoints");
+            Debug.Log(pointSystemGameObject.HatPoints);
         }
         else
         {
