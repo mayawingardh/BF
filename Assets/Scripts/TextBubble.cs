@@ -17,6 +17,8 @@ public class TextBubble : MonoBehaviour
     [SerializeField] DragAndDrop square4;
     [SerializeField] DragAndDrop square5;
 
+    int randomNumber;
+
     //private void OnEnable()
     //{
     //    square.IsPlaced += ShowTextBubble;
@@ -34,7 +36,7 @@ public class TextBubble : MonoBehaviour
     //    square3.IsPlaced -= ShowTextBubble;
     //    square4.IsPlaced -= ShowTextBubble;
     //    square5.IsPlaced -= ShowTextBubble;
-   // }
+    // }
 
     void Start()
     {
