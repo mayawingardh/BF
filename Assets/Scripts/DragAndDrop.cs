@@ -30,6 +30,8 @@ public class DragAndDrop : MonoBehaviour
     Transform spawnNewHat;
     [SerializeField]
     Transform spawnOldHat;
+
+    int points;
    
     private void Awake()
     {
@@ -41,6 +43,7 @@ public class DragAndDrop : MonoBehaviour
     private void Start()
     {
         mainCamera = Camera.main;
+        points = 0;
     }
 
     private void Update()
@@ -77,6 +80,8 @@ public class DragAndDrop : MonoBehaviour
             placed = true;
             spawnManagerNewHat.spawnNewGarment(newHat, spawnNewHat);
             textBubble.ShowNewHatTextBubble();
+            points -= 1;
+            Debug.Log(points);
         }
 
         else if (Vector2.Distance(transform.position, ett.transform.position) < 3 && gameObject.CompareTag("oldhat"))
@@ -85,6 +90,8 @@ public class DragAndDrop : MonoBehaviour
             placed = true;
             spawnManagerNewHat.spawnNewGarment(oldHat, spawnOldHat);
             textBubble.ShowOldHatTextBubble1();
+            points += 1;
+            Debug.Log(points);
 
         }
         else
