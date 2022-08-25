@@ -83,6 +83,7 @@ public class DragAndDrop : MonoBehaviour
             pointSystemGameObject.HatPoints = -1;
             Debug.Log("HatPoints");
             Debug.Log(pointSystemGameObject.HatPoints);
+
             if (destroy!=null)
             {
                 destroy[0].SetActive(false);

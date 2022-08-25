@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class DAD3 : MonoBehaviour
+public class DAD4 : MonoBehaviour
 {
     TextBubble textBubble;
     SpawnManagerNewHat spawnManagerNewHat;
@@ -20,16 +20,16 @@ public class DAD3 : MonoBehaviour
     private Vector2 OrgPos;
 
     [SerializeField]
-    private GameObject tre;
+    private GameObject fyra;
 
     [SerializeField]
-    List<GameObject> newSocks;
+    List<GameObject> newBottom;
     [SerializeField]
-    List<GameObject> oldSocks;
+    List<GameObject> oldBottom;
     [SerializeField]
-    Transform spawnNewSocks;
+    Transform spawnNewBottom;
     [SerializeField]
-    Transform spawnOldSocks;
+    Transform spawnOldBottom;
 
     PointSystem pointSystemGameObject;
 
@@ -76,11 +76,11 @@ public class DAD3 : MonoBehaviour
     private void OnMouseUp()
     {
 
-        if (Vector2.Distance(transform.position, tre.transform.position) < 3 && gameObject.CompareTag("NewBottom"))
+        if (Vector2.Distance(transform.position, fyra.transform.position) < 3 && gameObject.CompareTag("NewBottom"))
         {
-            transform.position = tre.transform.position;
+            transform.position = fyra.transform.position;
             placed = true;
-            spawnManagerNewHat.spawnNewGarment(newSocks, spawnNewSocks);
+            spawnManagerNewHat.spawnNewGarment(newBottom, spawnNewBottom);
             textBubble.ShowNewBottomTextBubble();
             pointSystemGameObject.BottomPoints = -1;
             Debug.Log("BottomPoints");
@@ -88,11 +88,11 @@ public class DAD3 : MonoBehaviour
 
         }
 
-        else if (Vector2.Distance(transform.position, tre.transform.position) < 3 && gameObject.CompareTag("OldBottom"))
+        else if (Vector2.Distance(transform.position, fyra.transform.position) < 3 && gameObject.CompareTag("OldBottom"))
         {
-            transform.position = tre.transform.position;
+            transform.position = fyra.transform.position;
             placed = true;
-            spawnManagerNewHat.spawnNewGarment(oldSocks, spawnOldSocks);
+            spawnManagerNewHat.spawnNewGarment(oldBottom, spawnOldBottom);
             textBubble.ShowOldBottomTextBubble();
             pointSystemGameObject.BottomPoints = 1;
             Debug.Log("BottomPoints");
