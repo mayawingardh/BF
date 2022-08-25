@@ -20,13 +20,13 @@ public class TextBubble : MonoBehaviour
 
     public void ShowNewHatTextBubble()
     {
-        GetRandomNumberPositive();
+        GetRandomNumberNegative();
         ShowButton();
     }
 
     public void ShowOldHatTextBubble1()
     {
-        GetRandomNumberNegative();
+        GetRandomNumberPositive();
         ShowButton();
     }
 
@@ -38,13 +38,13 @@ public class TextBubble : MonoBehaviour
 
     public void ShowOldTopTextBubble()
     {
-        GetRandomNumberNegative();
+        GetRandomNumberPositive();
         ShowButton();
     }
 
     public void ShowNewBottomTextBubble()
     {
-        GetRandomNumberPositive();
+        GetRandomNumberNegative();
         ShowButton();
     }
 
