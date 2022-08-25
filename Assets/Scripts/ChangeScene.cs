@@ -7,6 +7,16 @@ public class ChangeScene : MonoBehaviour
 {
     public void GoOutFromStore()
     {
-        SceneManager.LoadScene(1);
+
+        //if (poänge =< 10)
+        //{
+        //SceneManager.LoadScene(1);
+
+        //}
+
+        //if (poäng )
+        //{
+
+        //}
     }
 }

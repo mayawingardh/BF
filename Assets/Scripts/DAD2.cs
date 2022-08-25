@@ -23,16 +23,25 @@ public class DAD2 : MonoBehaviour
     [SerializeField]
     private GameObject tva;
 
+    [SerializeField]
+    List<GameObject> newTop;
+    [SerializeField]
+    List<GameObject> oldTop;
+    [SerializeField]
+    Transform spawnNewTop;
+    [SerializeField]
+    Transform spawnOldTop;
+
     private void Awake()
     {
         OrgPos = transform.position;
+        textBubble = FindObjectOfType<TextBubble>();
+        spawnManagerNewHat = FindObjectOfType<SpawnManagerNewHat>();
     }
 
     private void Start()
     {
         mainCamera = Camera.main;
-        textBubble = FindObjectOfType<TextBubble>();
-        spawnManagerNewHat = FindObjectOfType<SpawnManagerNewHat>();
     }
 
     private void Update()
@@ -67,8 +76,8 @@ public class DAD2 : MonoBehaviour
         {
             transform.position = tva.transform.position;
             placed = true;
-            //spawnManagerNewHat.spawnNewGarment();
-            //textBubble.
+            spawnManagerNewHat.spawnNewGarment(oldTop, spawnOldTop);
+            textBubble.ShowOldTopTextBubble();
 
 
         }
@@ -77,13 +86,15 @@ public class DAD2 : MonoBehaviour
         {
             transform.position = tva.transform.position;
             placed = true;
+            spawnManagerNewHat.spawnNewGarment(newTop, spawnNewTop);
+            textBubble.ShowNewTopTextBubble();
 
         }
         else
         {
             transform.position = OrgPos;
             dragging = false;
-            audioSource.PlayOneShot(dropSound);
+            //audioSource.PlayOneShot(dropSound);
         }
     }
 
