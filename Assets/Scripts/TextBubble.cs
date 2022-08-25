@@ -17,24 +17,24 @@ public class TextBubble : MonoBehaviour
     [SerializeField] DragAndDrop square4;
     [SerializeField] DragAndDrop square5;
 
-    private void OnEnable()
-    {
-        square.IsPlaced += ShowTextBubble;
-        square1.IsPlaced += ShowTextBubble1;
-        square2.IsPlaced += ShowTextBubble2;
-        square3.IsPlaced += ShowTextBubble3;
-        square4.IsPlaced += ShowTextBubble4;
-        square5.IsPlaced += ShowTextBubble5;
-    }
-    private void OnDisable()
-    {
-        square.IsPlaced -= ShowTextBubble;
-        square1.IsPlaced -= ShowTextBubble;
-        square2.IsPlaced -= ShowTextBubble;
-        square3.IsPlaced -= ShowTextBubble;
-        square4.IsPlaced -= ShowTextBubble;
-        square5.IsPlaced -= ShowTextBubble;
-    }
+    //private void OnEnable()
+    //{
+    //    square.IsPlaced += ShowTextBubble;
+    //    square1.IsPlaced += ShowTextBubble1;
+    //    square2.IsPlaced += ShowTextBubble2;
+    //    square3.IsPlaced += ShowTextBubble3;
+    //    square4.IsPlaced += ShowTextBubble4;
+    //    square5.IsPlaced += ShowTextBubble5;
+    //}
+    //private void OnDisable()
+    //{
+    //    square.IsPlaced -= ShowTextBubble;
+    //    square1.IsPlaced -= ShowTextBubble;
+    //    square2.IsPlaced -= ShowTextBubble;
+    //    square3.IsPlaced -= ShowTextBubble;
+    //    square4.IsPlaced -= ShowTextBubble;
+    //    square5.IsPlaced -= ShowTextBubble;
+   // }
 
     void Start()
     {

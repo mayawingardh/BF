@@ -5,8 +5,8 @@ using System;
 
 public class DragAndDrop : MonoBehaviour
 {
-    public event Action IsPlaced = delegate { };
-
+    public event Action NewHatPlaced = delegate { };
+    public event Action OldHatPlaced = delegate { };
 
     private bool dragging, placed;
 
@@ -21,12 +21,7 @@ public class DragAndDrop : MonoBehaviour
 
     [SerializeField]
     private GameObject ett;
-    [SerializeField]
-    private GameObject tva;
-    [SerializeField]
-    private GameObject tre;
-
-
+   
     private void Awake()
     {
         OrgPos = transform.position;
@@ -57,7 +52,7 @@ public class DragAndDrop : MonoBehaviour
     private void OnMouseDown()
     {
         dragging = true;
-        audioSource.PlayOneShot(pickUpSound);
+        //audioSource.PlayOneShot(pickUpSound);
 
         offset = GetMousePos() - (Vector2) transform.position;
     }
@@ -65,17 +60,24 @@ public class DragAndDrop : MonoBehaviour
     private void OnMouseUp()
     {
 
-        if (Vector2.Distance(transform.position, ett.transform.position) < 3)
+        if (Vector2.Distance(transform.position, ett.transform.position) < 3 && gameObject.CompareTag("NewHat"))
         {
             transform.position = ett.transform.position;
             placed = true;
-            IsPlaced.Invoke();
+            NewHatPlaced.Invoke();
+        }
+
+        else if (Vector2.Distance(transform.position, ett.transform.position) < 3 && gameObject.CompareTag("oldhat"))
+        {
+            transform.position = ett.transform.position;
+            placed = true;
+           // OldHatPlaced.Invoke();
         }
         else
         {
             transform.position = OrgPos;
             dragging = false;
-            audioSource.PlayOneShot(dropSound);
+            //audioSource.PlayOneShot(dropSound);
         }  
     }
 
