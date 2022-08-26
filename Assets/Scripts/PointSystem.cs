@@ -27,11 +27,13 @@ public class PointSystem : MonoBehaviour
         if(TotalPoints >= 1)
         {
             SceneManager.LoadScene("HeavenScene");
+            PlaySound.PlayHeavenMusic();
         }
 
         if(TotalPoints <= 0)
         {
             SceneManager.LoadScene("HellScene");
+            PlaySound.PlayBossMusic();
         }
     }
 }
