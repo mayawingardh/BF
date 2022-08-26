@@ -99,7 +99,7 @@ MonoBehaviour:
   audioSource: {fileID: 2689292507271269081, guid: e8e0285ac5dc0594286a311c9a815a0a, type: 3}
   pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
   dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
-  tre: {fileID: 9098092040400540481, guid: 2ab1d1815818eab4b8e95f7a012ad0ab, type: 3}
+  tre: {fileID: 6165373473540863025, guid: 157cee1996265f54ba5acc766653aed7, type: 3}
   newSocks:
   - {fileID: 8735173020033827225}
   oldSocks:
