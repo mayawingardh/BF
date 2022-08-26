@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1928143744}
-  pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
+  pickUpSound: {fileID: 8300000, guid: 51324af52be3ba245a611e5aed5871a6, type: 3}
   dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
   tre: {fileID: 6165373473540863025, guid: 157cee1996265f54ba5acc766653aed7, type: 3}
   newSocks:
@@ -430,7 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1928143744}
-  pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
+  pickUpSound: {fileID: 8300000, guid: 51324af52be3ba245a611e5aed5871a6, type: 3}
   dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
   ett: {fileID: 808752197}
   newHat:
@@ -657,7 +657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1928143744}
-  pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
+  pickUpSound: {fileID: 8300000, guid: 51324af52be3ba245a611e5aed5871a6, type: 3}
   dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
   fyra: {fileID: 1638246633663321684}
   newPants:
@@ -790,7 +790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1928143744}
-  pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
+  pickUpSound: {fileID: 8300000, guid: 51324af52be3ba245a611e5aed5871a6, type: 3}
   dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
   tva: {fileID: 219447607}
   newTop:
@@ -1006,7 +1006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1928143744}
-  pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
+  pickUpSound: {fileID: 8300000, guid: 51324af52be3ba245a611e5aed5871a6, type: 3}
   dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
   fyra: {fileID: 1638246633663321684}
   newPants:
@@ -1673,7 +1673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1928143744}
-  pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
+  pickUpSound: {fileID: 8300000, guid: 51324af52be3ba245a611e5aed5871a6, type: 3}
   dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
   ett: {fileID: 808752197}
   newHat:
@@ -2629,7 +2629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1928143744}
-  pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
+  pickUpSound: {fileID: 8300000, guid: 51324af52be3ba245a611e5aed5871a6, type: 3}
   dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
   tva: {fileID: 219447607}
   newTop:
@@ -2771,7 +2771,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928143743}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 11cdb452e29e71742b3131d414555c9c, type: 3}
@@ -3108,6 +3108,10 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1928143744}
+    - target: {fileID: 259107769360737378, guid: fc929d3c63eaf5a418479371a196a654, type: 3}
+      propertyPath: pickUpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 51324af52be3ba245a611e5aed5871a6, type: 3}
     - target: {fileID: 259107769360737378, guid: fc929d3c63eaf5a418479371a196a654, type: 3}
       propertyPath: spawnNewSocks
       value: 

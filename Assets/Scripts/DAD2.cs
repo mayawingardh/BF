@@ -122,7 +122,7 @@ public class DAD2 : MonoBehaviour
         {
             transform.position = OrgPos;
             dragging = false;
-            //audioSource.PlayOneShot(dropSound);
+            audioSource.PlayOneShot(dropSound);
         }
     }
 
