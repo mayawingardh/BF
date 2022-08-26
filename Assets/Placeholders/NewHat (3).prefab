@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3483363992446871232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,9 +72,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.7913147, g: 1, b: 0, a: 1}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 7a02b8fac3c8b7343b4e85d1cd4357eb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -107,7 +107,6 @@ MonoBehaviour:
   oldHat:
   - {fileID: 3665088860985654572, guid: 8621038ea3cf2fe40a4e5e60eba9ff7e, type: 3}
   - {fileID: 8084722018489728321, guid: 834a5344a7e42984cbe76e4246f5a1d3, type: 3}
-  - {fileID: 8193007829485004714, guid: 86cc8a9c1b7996640a6c99104ebfa69c, type: 3}
   spawnNewHat: {fileID: 3312517589092564223, guid: e4a66ee53d0ac7346a6365cd2ade60fb, type: 3}
   spawnOldHat: {fileID: 8353546035564949843, guid: 4502d473fb83fd243b96080aa1735831, type: 3}
 --- !u!58 &3483363992446871244

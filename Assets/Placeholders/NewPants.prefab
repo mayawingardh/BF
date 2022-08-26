@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 5697459764219567795}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.2356963, y: -1.7647483, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 7dbcfc7ffbf7cfe4f92430e8faaaf2f6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -126,10 +126,10 @@ MonoBehaviour:
   pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
   dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
   fyra: {fileID: 6165373473540863025, guid: 157cee1996265f54ba5acc766653aed7, type: 3}
-  newBottom:
-  - {fileID: 5697459764219567795}
-  oldBottom:
-  - {fileID: 5697459764219567795}
-  - {fileID: 5697459764219567795}
-  spawnNewBottom: {fileID: 4759081685424826248, guid: 3a636fec34a27ff4baad1c4a61715849, type: 3}
-  spawnOldBottom: {fileID: 76532892984377406, guid: 8ac21e6eaf48fd84ba1631f514549190, type: 3}
+  newPants:
+  - {fileID: 7922202920967268944, guid: 2f79906041ff3354192725ecddf908f1, type: 3}
+  - {fileID: 68293745136593836, guid: 872f805253dde1f4b9575035ba30b7e1, type: 3}
+  oldPants:
+  - {fileID: 7922202920967268944, guid: 2f79906041ff3354192725ecddf908f1, type: 3}
+  spawnNewPants: {fileID: 4759081685424826248, guid: 3a636fec34a27ff4baad1c4a61715849, type: 3}
+  spawnOldPants: {fileID: 76532892984377406, guid: 8ac21e6eaf48fd84ba1631f514549190, type: 3}

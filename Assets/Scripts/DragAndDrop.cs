@@ -82,12 +82,7 @@ public class DragAndDrop : MonoBehaviour
             textBubble.ShowNewHatTextBubble();
             pointSystemGameObject.HatPoints = -1;
 
-            if (destroy!=null)
-            {
-                destroy[0].SetActive(false);
-
-            }
-            destroy.Add(this.gameObject);
+        
         }
 
         else if (Vector2.Distance(transform.position, ett.transform.position) < 3 && gameObject.CompareTag("oldhat"))

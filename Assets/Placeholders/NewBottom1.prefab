@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8735173020033827223}
   - component: {fileID: 8735173020033827222}
   - component: {fileID: -6743983740744675759}
-  - component: {fileID: 544850135977963833}
+  - component: {fileID: -8006092680875874877}
   m_Layer: 0
   m_Name: NewBottom1
   m_TagString: NewBottom
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8735173020033827225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.81, y: 2.82, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: dea56bc609c29a24d980d6e63e4396e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,17 +100,13 @@ MonoBehaviour:
   pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
   dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
   tre: {fileID: 9098092040400540481, guid: 2ab1d1815818eab4b8e95f7a012ad0ab, type: 3}
-  newBottom:
+  newSocks:
   - {fileID: 8735173020033827225}
-  - {fileID: 7076483719515370855, guid: 7ea846c3dec4eda4daa072b9c47ebd2e, type: 3}
-  - {fileID: 349434326509081286, guid: 642dbfb526d1a4047a22d59b060459a6, type: 3}
-  oldBottom:
-  - {fileID: 8859042580181101786, guid: 0b6158f25a024ba4698907dba534d0ea, type: 3}
-  - {fileID: 6541003062956654133, guid: 3edafe1e2c1eaf84d80e5362d717d317, type: 3}
-  - {fileID: 7542214742923806730, guid: 6aca20c6f78f56f4f9ec9a893bbccc10, type: 3}
-  spawnNewBottom: {fileID: 6244446925599061985, guid: 71fc145964181594389e760129c3ba4c, type: 3}
-  spawnOldBottom: {fileID: 7571918431116172380, guid: e0c5a3d73cae66f47b00f47b6cf9c028, type: 3}
---- !u!61 &544850135977963833
+  oldSocks:
+  - {fileID: 259107769360737388, guid: fc929d3c63eaf5a418479371a196a654, type: 3}
+  spawnNewSocks: {fileID: 6244446925599061985, guid: 71fc145964181594389e760129c3ba4c, type: 3}
+  spawnOldSocks: {fileID: 7571918431116172380, guid: e0c5a3d73cae66f47b00f47b6cf9c028, type: 3}
+--- !u!61 &-8006092680875874877
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,16 +119,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 17.513401, y: -19.492527}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 4.63, y: 2.17}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6.497101, y: 3.663681}
   m_EdgeRadius: 0
