@@ -33,6 +33,7 @@ public class DAD4 : MonoBehaviour
 
     PointSystem pointSystemGameObject;
 
+    protected static List<GameObject> destroyPants;
 
 
     private void Awake()
@@ -83,6 +84,18 @@ public class DAD4 : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(newPants, spawnNewPants);
             textBubble.ShowNewBottomTextBubble();
             pointSystemGameObject.MiddlePoints = -1;
+
+            destroyPants ??= new List<GameObject>();
+
+            if (destroyPants.Count == 1)
+            {
+
+                destroyPants[0].SetActive(false);
+                destroyPants = new List<GameObject>();
+
+            }
+
+            destroyPants.Add(this.gameObject);
         }
 
         else if (Vector2.Distance(transform.position, fyra.transform.position) < 3 && gameObject.CompareTag("OldPants"))
@@ -92,6 +105,18 @@ public class DAD4 : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(oldPants, spawnOldPants);
             textBubble.ShowOldBottomTextBubble();
             pointSystemGameObject.MiddlePoints = 1;
+
+            destroyPants ??= new List<GameObject>();
+
+            if (destroyPants.Count == 1)
+            {
+
+                destroyPants[0].SetActive(false);
+                destroyPants = new List<GameObject>();
+
+            }
+
+            destroyPants.Add(this.gameObject);
         }
 
         else

@@ -34,6 +34,8 @@ public class DAD2 : MonoBehaviour
 
     PointSystem pointSystemGameObject;
 
+    protected static List<GameObject> destroyTop;
+
     private void Awake()
     {
         OrgPos = transform.position;
@@ -82,6 +84,18 @@ public class DAD2 : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(oldTop, spawnOldTop);
             textBubble.ShowOldTopTextBubble();
             pointSystemGameObject.TopPoints = 1;
+
+            destroyTop ??= new List<GameObject>();
+
+            if (destroyTop.Count == 1)
+            {
+
+                destroyTop[0].SetActive(false);
+                destroyTop = new List<GameObject>();
+
+            }
+
+            destroyTop.Add(this.gameObject);
         }
 
         else if (Vector2.Distance(transform.position, tva.transform.position) < 3 && gameObject.CompareTag("NewTop"))
@@ -91,6 +105,18 @@ public class DAD2 : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(newTop, spawnNewTop);
             textBubble.ShowNewTopTextBubble();
             pointSystemGameObject.TopPoints = -1;
+
+            destroyTop ??= new List<GameObject>();
+
+            if (destroyTop.Count == 1)
+            {
+
+                destroyTop[0].SetActive(false);
+                destroyTop = new List<GameObject>();
+
+            }
+
+            destroyTop.Add(this.gameObject);
         }
         else
         {

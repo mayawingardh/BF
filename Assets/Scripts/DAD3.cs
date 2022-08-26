@@ -33,7 +33,7 @@ public class DAD3 : MonoBehaviour
 
     PointSystem pointSystemGameObject;
 
-
+    protected static List<GameObject> destroyBottom;
 
     private void Awake()
     {
@@ -83,6 +83,18 @@ public class DAD3 : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(newSocks, spawnNewSocks);
             textBubble.ShowNewBottomTextBubble();
             pointSystemGameObject.BottomPoints = -1;
+
+            destroyBottom ??= new List<GameObject>();
+
+            if (destroyBottom.Count == 1)
+            {
+
+                destroyBottom[0].SetActive(false);
+                destroyBottom = new List<GameObject>();
+
+            }
+
+            destroyBottom.Add(this.gameObject);
         }
 
         else if (Vector2.Distance(transform.position, tre.transform.position) < 3 && gameObject.CompareTag("OldBottom"))
@@ -92,6 +104,18 @@ public class DAD3 : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(oldSocks, spawnOldSocks);
             textBubble.ShowOldBottomTextBubble();
             pointSystemGameObject.BottomPoints = 1;
+
+            destroyBottom ??= new List<GameObject>();
+
+            if (destroyBottom.Count == 1)
+            {
+
+                destroyBottom[0].SetActive(false);
+                destroyBottom = new List<GameObject>();
+
+            }
+
+            destroyBottom.Add(this.gameObject);
         }
 
         else

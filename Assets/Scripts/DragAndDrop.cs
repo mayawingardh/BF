@@ -10,7 +10,7 @@ public class DragAndDrop : MonoBehaviour
 
     private bool dragging, placed;
 
-    [SerializeField] 
+    [SerializeField]
     private AudioSource audioSource;
     [SerializeField]
     private AudioClip pickUpSound, dropSound;
@@ -33,7 +33,7 @@ public class DragAndDrop : MonoBehaviour
 
     PointSystem pointSystemGameObject;
 
-    List<GameObject> destroy = new List<GameObject>();
+    protected static List<GameObject> destroyHat;
 
     private void Awake()
     {
@@ -55,21 +55,21 @@ public class DragAndDrop : MonoBehaviour
             return;
         }
 
-        if(!dragging)
+        if (!dragging)
         {
             return;
         }
 
         var mousePos = GetMousePos();
 
-        transform.position = mousePos- offset;
+        transform.position = mousePos - offset;
     }
 
     private void OnMouseDown()
     {
         dragging = true;
         //audioSource.PlayOneShot(pickUpSound);
-        offset = GetMousePos() - (Vector2) transform.position;
+        offset = GetMousePos() - (Vector2)transform.position;
     }
 
     private void OnMouseUp()
@@ -82,7 +82,17 @@ public class DragAndDrop : MonoBehaviour
             textBubble.ShowNewHatTextBubble();
             pointSystemGameObject.HatPoints = -1;
 
-        
+            destroyHat ??= new List<GameObject>();
+
+            if (destroyHat.Count == 1)
+            {
+
+                destroyHat[0].SetActive(false);
+                destroyHat = new List<GameObject>();
+
+            }
+
+            destroyHat.Add(this.gameObject);
         }
 
         else if (Vector2.Distance(transform.position, ett.transform.position) < 3 && gameObject.CompareTag("oldhat"))
@@ -92,16 +102,28 @@ public class DragAndDrop : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(oldHat, spawnOldHat);
             textBubble.ShowOldHatTextBubble1();
             pointSystemGameObject.HatPoints = 1;
+
+            destroyHat ??= new List<GameObject>();
+
+            if (destroyHat.Count == 1)
+            {
+
+                destroyHat[0].SetActive(false);
+                destroyHat = new List<GameObject>();
+
+            }
+
+            destroyHat.Add(this.gameObject);
         }
         else
         {
             transform.position = OrgPos;
             dragging = false;
             //audioSource.PlayOneShot(dropSound);
-        }  
+        }
     }
-    Vector2 GetMousePos ()
+    Vector2 GetMousePos()
     {
-        return mainCamera.ScreenToWorldPoint(Input.mousePosition); 
+        return mainCamera.ScreenToWorldPoint(Input.mousePosition);
     }
 }
