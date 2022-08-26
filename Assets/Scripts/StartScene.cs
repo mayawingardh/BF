@@ -8,6 +8,7 @@ public class StartScene : MonoBehaviour
     public void loadlevel(string level)
     {
         SceneManager.LoadScene("GameScene");
+        PlaySound.PlayGameMusic();
 
     }
 }
