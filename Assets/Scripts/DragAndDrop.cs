@@ -8,12 +8,13 @@ public class DragAndDrop : MonoBehaviour
     TextBubble textBubble;
     SpawnManagerNewHat spawnManagerNewHat;
 
-    private bool dragging, placed;
+    //public Sounds soundsScript;
+    public bool dragging, placed;
 
-    [SerializeField]
-    private AudioSource audioSource;
-    [SerializeField]
-    private AudioClip pickUpSound, dropSound;
+    //[SerializeField]
+    //private AudioSource audioSource;
+    //[SerializeField]
+    //private AudioClip pickUpSound, dropSound;
 
     private Camera mainCamera;
     private Vector2 offset;
@@ -40,6 +41,7 @@ public class DragAndDrop : MonoBehaviour
         textBubble = FindObjectOfType<TextBubble>();
         spawnManagerNewHat = FindObjectOfType<SpawnManagerNewHat>();
         OrgPos = transform.position;
+        
     }
 
     private void Start()
@@ -68,16 +70,22 @@ public class DragAndDrop : MonoBehaviour
     private void OnMouseDown()
     {
         dragging = true;
-        //audioSource.PlayOneShot(pickUpSound);
+        
         offset = GetMousePos() - (Vector2)transform.position;
+        //soundsScript.PlayWrinkle();
+
+
     }
 
     private void OnMouseUp()
     {
+
+
         if (Vector2.Distance(transform.position, ett.transform.position) < 3 && gameObject.CompareTag("NewHat"))
         {
             transform.position = ett.transform.position;
             placed = true;
+            //soundsScript.PlayWrinkle();
             spawnManagerNewHat.spawnNewGarment(newHat, spawnNewHat);
             textBubble.ShowNewHatTextBubble();
             pointSystemGameObject.HatPoints = -1;
@@ -92,6 +100,7 @@ public class DragAndDrop : MonoBehaviour
 
             }
 
+
             destroyHat.Add(this.gameObject);
         }
 
@@ -102,6 +111,7 @@ public class DragAndDrop : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(oldHat, spawnOldHat);
             textBubble.ShowOldHatTextBubble1();
             pointSystemGameObject.HatPoints = 1;
+            //soundsScript.PlayWrinkle();
 
             destroyHat ??= new List<GameObject>();
 

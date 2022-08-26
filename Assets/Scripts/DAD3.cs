@@ -7,13 +7,14 @@ public class DAD3 : MonoBehaviour
 {
     TextBubble textBubble;
     SpawnManagerNewHat spawnManagerNewHat;
+   // public Sounds soundsScript;
 
-    private bool dragging, placed;
+    public bool dragging, placed;
 
-    [SerializeField]
-    private AudioSource audioSource;
-    [SerializeField]
-    private AudioClip pickUpSound, dropSound;
+    //[SerializeField]
+    //private AudioSource audioSource;
+    //[SerializeField]
+    //private AudioClip pickUpSound, dropSound;
 
     private Camera mainCamera;
     private Vector2 offset;
@@ -68,7 +69,7 @@ public class DAD3 : MonoBehaviour
     private void OnMouseDown()
     {
         dragging = true;
-        audioSource.PlayOneShot(pickUpSound);
+        //soundsScript.PlayWrinkle();
 
         offset = GetMousePos() - (Vector2)transform.position;
     }
@@ -83,6 +84,7 @@ public class DAD3 : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(newSocks, spawnNewSocks);
             textBubble.ShowNewBottomTextBubble();
             pointSystemGameObject.BottomPoints = -1;
+           // soundsScript.PlayWrinkle();
 
             destroyBottom ??= new List<GameObject>();
 
@@ -104,6 +106,7 @@ public class DAD3 : MonoBehaviour
             spawnManagerNewHat.spawnNewGarment(oldSocks, spawnOldSocks);
             textBubble.ShowOldBottomTextBubble();
             pointSystemGameObject.BottomPoints = 1;
+           // soundsScript.PlayWrinkle();
 
             destroyBottom ??= new List<GameObject>();
 
@@ -122,7 +125,7 @@ public class DAD3 : MonoBehaviour
         {
             transform.position = OrgPos;
             dragging = false;
-            audioSource.PlayOneShot(dropSound);
+            //audioSource.PlayOneShot(dropSound);
         }
     }
 

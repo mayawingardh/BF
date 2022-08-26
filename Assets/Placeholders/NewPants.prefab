@@ -122,9 +122,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241a9f24dbee5cb42b9e760a4928a3c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 2689292507271269081, guid: e8e0285ac5dc0594286a311c9a815a0a, type: 3}
-  pickUpSound: {fileID: 8300000, guid: d36776d9ffde34243ad729e9366c12af, type: 3}
-  dropSound: {fileID: 8300000, guid: bd0aa38aee2216c4e923ea91b0502baf, type: 3}
+  soundsScript: {fileID: 694739021, guid: 089de25b7b058184dbc229486ac14960, type: 3}
+  dragging: 0
+  placed: 0
+  audioSource: {fileID: 4534583196209881668, guid: 089de25b7b058184dbc229486ac14960, type: 3}
+  pickUpSound: {fileID: 8300000, guid: 2999ebc1101d7d64487a812549aa8fb0, type: 3}
+  dropSound: {fileID: 8300000, guid: 2999ebc1101d7d64487a812549aa8fb0, type: 3}
   fyra: {fileID: 6165373473540863025, guid: 157cee1996265f54ba5acc766653aed7, type: 3}
   newPants:
   - {fileID: 7922202920967268944, guid: 2f79906041ff3354192725ecddf908f1, type: 3}
